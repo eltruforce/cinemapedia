@@ -1,0 +1,35 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Estilo y consistencia
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_single_quotes: true
+    prefer_final_locals: true
+    unnecessary_this: true
+    always_declare_return_types: true
+    use_key_in_widget_constructors: true
+    sort_child_properties_last: true
+
+    # Buenas prácticas
+    avoid_print: true
+    avoid_unnecessary_containers: true
+    avoid_init_to_null: true
+    avoid_empty_else: true
+    avoid_returning_null_for_future: true
+    avoid_returning_null: true
+    avoid_field_initializers_in_const_classes: true
+    avoid_positional_boolean_parameters: true
+
+    # Seguridad
+    null_closures: true
+    no_duplicate_case_values: true
+    empty_catches: false
+    empty_constructor_bodies: true
+
+    # Limpieza
+    unnecessary_brace_in_string_interps: true
+    unnecessary_lambdas: true
+    unnecessary_overrides: true
+    unnecessary_parenthesis: true
