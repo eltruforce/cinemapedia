@@ -1,4 +1,3 @@
-import 'package:cinemapedia/config/database/database.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -6,6 +5,8 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:cinemapedia/config/router/app_router.dart';
 import 'package:cinemapedia/config/themes/app_theme.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+// import 'package:cinemapedia/config/database/database.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,11 +23,11 @@ Future<void> main() async {
   //       ),
   //     );
 
-  final deleteQuery = await db.delete(db.favoriteMovies);
-  await deleteQuery.go();
+  // final deleteQuery = await db.delete(db.favoriteMovies);
+  // await deleteQuery.go();
 
-  final moviesQuery = await db.select(db.favoriteMovies).get();
-  print('items in database: $moviesQuery');
+  // final movies = await db.select(db.favoriteMovies).get();
+  // print('movies: $movies');
 
   await dotenv.load(fileName: '.env');
 
