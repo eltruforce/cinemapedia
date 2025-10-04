@@ -24,5 +24,7 @@ final appRouter = GoRouter(
         ),
       ],
     ),
+
+    GoRoute(path: '/', redirect: (_, __) => '/home/0'),
   ],
 );
